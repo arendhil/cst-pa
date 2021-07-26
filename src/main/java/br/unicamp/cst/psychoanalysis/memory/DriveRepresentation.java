@@ -14,7 +14,7 @@ import br.unicamp.cst.core.entities.MemoryObject;
  * 
  * Evaluation standard attribute will be used in place of quota of affect.
  */
-public class DriveRepresentation extends MemoryObject {
+public class DriveRepresentation extends ThingPresentation {
 
 	public enum DRIVE_COMPONENT {LIBIDINOUS, AGGRESSIVE};
 	public enum DRIVE_PARTIAL {ORAL, ANAL, PHALIC, GENITAL, SELF_PRESENVATION};
@@ -37,7 +37,7 @@ public class DriveRepresentation extends MemoryObject {
 	
 	@Override
 	public String toString() {
-		return "DR [" + getName() + "=" + this.getI().toString() + ", timestamp=" + getTimestamp() + ", evaluation="
+		return "DR: [" + getName() + "=" + this.getI().toString() + ", timestamp=" + getTimestamp() + ", evaluation="
 				+ getEvaluation() + "]";
 	}
 }

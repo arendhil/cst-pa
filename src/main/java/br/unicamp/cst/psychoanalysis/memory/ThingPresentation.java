@@ -8,7 +8,7 @@ public class ThingPresentation extends MemoryObject {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public String Phrase() {
+	public String phrase() {
 		return String.format("TP:%1s:%2s", getName(), getI());
 	}
 }
