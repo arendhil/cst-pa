@@ -1,10 +1,10 @@
-package br.unicamp.cst.psychoanalysis.tracks.selfpreservationdrive;
+package br.unicamp.cst.psychoanalysis.tracks.sexualdrive;
 
 import br.unicamp.cst.core.entities.Codelet;
 
-public class AffectGenerationForSelfPreservation extends Codelet {
+public class F64_PartialSexualDrives extends Codelet {
 
-	public AffectGenerationForSelfPreservation() {
+	public F64_PartialSexualDrives() {
 		// TODO Auto-generated constructor stub
 	}
 

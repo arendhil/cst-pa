@@ -58,7 +58,7 @@ public abstract class Codelet implements Runnable {
 
 	/**
 	 * Threshold of the codelet, which is used to decide if it runs or not. If
-	 * activation is equal or greater than activation, codelet runs
+	 * activation is equal or greater than threshold, codelet runs
 	 * proc().Ranges from 0.0 to 1.0d.
 	 */
 	protected double threshold = 0.0d;
