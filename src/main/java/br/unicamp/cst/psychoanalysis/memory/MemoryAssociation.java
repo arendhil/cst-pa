@@ -1,7 +1,11 @@
 package br.unicamp.cst.psychoanalysis.memory;
 
 public class MemoryAssociation {
-	float weight;
+	public enum ASSOCIATION_KIND { ATTRIBUTE, CLASS, TEMPORAL, WORD, DRIVE_MESH };
+
+	Double weight = 1.0;
+	ASSOCIATION_KIND KIND = ASSOCIATION_KIND.ATTRIBUTE;
+
 	ThingPresentation tp1;
 	ThingPresentation tp2;
 
@@ -9,12 +13,20 @@ public class MemoryAssociation {
 		// TODO Auto-generated constructor stub
 	}
 
-	public float getWeight() {
+	public Double getWeight() {
 		return weight;
 	}
 
-	public void setWeight(float weight) {
+	public void setWeight(Double weight) {
 		this.weight = weight;
+	}
+	
+	public ASSOCIATION_KIND getKIND() {
+		return KIND;
+	}
+
+	public void setKIND(ASSOCIATION_KIND kind) {
+		KIND = kind;
 	}
 
 	public ThingPresentation getTp1() {

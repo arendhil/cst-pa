@@ -8,6 +8,7 @@ import br.unicamp.cst.core.entities.MemoryObject;
  *
  */
 public class ThingPresentation extends MemoryObject {
+	Boolean _volatile = false;
 
 	public ThingPresentation() {
 		// TODO Auto-generated constructor stub
@@ -15,5 +16,13 @@ public class ThingPresentation extends MemoryObject {
 	
 	public String phrase() {
 		return String.format("TP:%1s:%2s", getName(), getI());
+	}
+	
+	public Boolean isVolatile() {
+		return _volatile;
+	}
+	
+	public void setVolaticity(Boolean volaticity) {
+		_volatile = volaticity;
 	}
 }
